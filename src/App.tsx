@@ -1,12 +1,9 @@
-import styled from "styled-components";
+import Header from "components/header";
+import Section from "components/section";
+import Input from "components/input";
+import Button from "components/button";
 
-const Header = styled.header`
-  text-align: center;
-`;
-
-const Section = styled.section`
-  text-align: center;
-`;
+const log = (...args: any) => console.log(...args);
 
 const App = () => (
   <>
@@ -17,8 +14,8 @@ const App = () => (
       <p>Lorem Ipsum</p>
     </Section>
     <Section>
-      <input />
-      <button>Parse</button>
+      <Input />
+      <Button onClick={() => log("hello", "there")}>Parse</Button>
     </Section>
   </>
 );
