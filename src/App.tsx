@@ -31,7 +31,7 @@ const App = () => {
           </CodeSection>
         </Text>
         <Text>
-          BNF grammar might looks like this:
+          <strong>BNF</strong> grammar might looks like this:
           <CodeSection>
             <Code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</Code>
             <Code>{"<fullNumber>  ::= <countryCode> <basicNumber>"}</Code>
@@ -59,7 +59,7 @@ const App = () => {
       </Section>
       <Section centered>
         <Title level="2">Parser Result</Title>
-        <Text>{parserResult}</Text>
+        {parserResult && <Text>The result is {parserResult}</Text>}
       </Section>
     </Container>
   );
