@@ -1,18 +1,9 @@
-import Header from "components/header";
-import Section from "components/section";
+import Layout from "components/layout";
 import Input from "components/input";
 import Button from "components/button";
 import { log } from "utils/logger";
 
-import styled from "styled-components";
-
-const Container = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-`;
+const { Container, Header, Section } = Layout;
 
 const App = () => (
   <Container>
