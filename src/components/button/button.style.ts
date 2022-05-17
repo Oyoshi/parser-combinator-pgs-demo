@@ -10,6 +10,7 @@ export const StyledButton = styled.button`
   border-radius: 24px;
   padding: 0.25em 1.5em;
   margin: 0 2em;
+  outline: none;
 
   :hover {
     background-color: ${({ theme }) => theme.accentDark};
