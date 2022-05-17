@@ -29,9 +29,11 @@ const App = () => {
             <Code>xx xxx xx xx (within Poland)</Code>
             <Code>+48 xx xxx xx xx (outside Poland)</Code>
           </CodeSection>
+          We want to parse given number to the format: '+48xxxxxxxxx' when its
+          valid or show proper error message otherwise.
         </Text>
         <Text>
-          <strong>BNF</strong> grammar might looks like this:
+          Based on this the <strong>BNF</strong> grammar might looks like this:
           <CodeSection>
             <Code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</Code>
             <Code>{"<fullNumber>  ::= <countryCode> <basicNumber>"}</Code>
