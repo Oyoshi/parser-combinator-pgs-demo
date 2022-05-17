@@ -5,8 +5,8 @@ type TypographyProps = {
 };
 
 export type TitleProps = TypographyProps & { level: "1" | "2" | "3" };
-type TextProps = TypographyProps;
-type CodeProps = TypographyProps;
+export type TextProps = TypographyProps;
+export type CodeProps = TypographyProps;
 
 export type TypographyType = FC<TypographyProps> & {
   Title: FC<TitleProps>;

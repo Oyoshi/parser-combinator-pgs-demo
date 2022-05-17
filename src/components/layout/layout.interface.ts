@@ -4,9 +4,9 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-type HeaderProps = LayoutProps;
-type SectionProps = LayoutProps;
-type ContainerProps = LayoutProps;
+export type HeaderProps = LayoutProps;
+export type SectionProps = LayoutProps & { centered?: boolean };
+export type ContainerProps = LayoutProps;
 
 export type LayoutType = FC<LayoutProps> & {
   Header: FC<HeaderProps>;

@@ -46,11 +46,11 @@ const App = () => {
         </Code>
         <Code>{'<spaces> ::= " " <spaces> | ""'}</Code>
       </Section>
-      <Section>
+      <Section centered>
         <Input onChange={handleInputChange} />
         <Button onClick={() => log("hello", "there")}>Parse</Button>
       </Section>
-      <Section>
+      <Section centered>
         <Title level="2">Parser Result</Title>
         <Text>{parserResult}</Text>
       </Section>
