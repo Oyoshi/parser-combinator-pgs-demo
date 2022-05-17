@@ -1,6 +1,7 @@
 interface Theme {
   fontFamily: string;
   background: string;
+  backgroundDark: string;
   primary: string;
   secondary: string;
   accent: string;
@@ -10,6 +11,7 @@ interface Theme {
 export const theme: Theme = {
   fontFamily: '"Roboto", sans-serif',
   background: "#ffffff",
+  backgroundDark: "#eeeeff",
   primary: "#040d2d",
   secondary: "#ffffff",
   accent: "#6161f3",

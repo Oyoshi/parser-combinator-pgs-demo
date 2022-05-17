@@ -4,7 +4,7 @@ import Typography from "components/typography";
 import Input from "components/input";
 import Button from "components/button";
 
-const { Container, Header, Section } = Layout;
+const { Container, Header, Section, CodeSection } = Layout;
 const { Title, Text, Code } = Typography;
 
 const App = () => {
@@ -25,27 +25,33 @@ const App = () => {
         <Text>
           Polish geographic telephone numbers have 9 digits. The prefix '0' is
           no longer required for the internal calls. So the valid formats are:
-          <Code>xx xxx xx xx (within Poland)</Code>
-          <Code>+48 xx xxx xx xx (outside Poland)</Code>
+          <CodeSection>
+            <Code>xx xxx xx xx (within Poland)</Code>
+            <Code>+48 xx xxx xx xx (outside Poland)</Code>
+          </CodeSection>
         </Text>
-        <Text>BNF grammar might looks like this:</Text>
-        <Code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</Code>
-        <Code>{"<fullNumber>  ::= <countryCode> <basicNumber>"}</Code>
-        <Code>{'<countryCode> ::= "+" <twoDigits>'}</Code>
-        <Code>
-          {
-            "<basicNumber> ::= <areaCode> <spaces> <twoDigits> <spaces> <threeDigits> <spaces> <twoDigits> <spaces> <twoDigits>"
-          }
-        </Code>
-        <Code>{"<areaCode>    ::= <twoDigits>"}</Code>
-        <Code>{"<twoDigits>   ::= <digit> <digit>"}</Code>
-        <Code>{"<threeDigits> ::= <digit> <digit> <digit>"}</Code>
-        <Code>
-          {
-            '<digit>       ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"'
-          }
-        </Code>
-        <Code>{'<spaces>      ::= " " <spaces> | ""'}</Code>
+        <Text>
+          BNF grammar might looks like this:
+          <CodeSection>
+            <Code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</Code>
+            <Code>{"<fullNumber>  ::= <countryCode> <basicNumber>"}</Code>
+            <Code>{'<countryCode> ::= "+" <twoDigits>'}</Code>
+            <Code>
+              {
+                "<basicNumber> ::= <areaCode> <spaces> <twoDigits> <spaces> <threeDigits> <spaces> <twoDigits> <spaces> <twoDigits>"
+              }
+            </Code>
+            <Code>{"<areaCode>    ::= <twoDigits>"}</Code>
+            <Code>{"<twoDigits>   ::= <digit> <digit>"}</Code>
+            <Code>{"<threeDigits> ::= <digit> <digit> <digit>"}</Code>
+            <Code>
+              {
+                '<digit>       ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"'
+              }
+            </Code>
+            <Code>{'<spaces>      ::= " " <spaces> | ""'}</Code>
+          </CodeSection>
+        </Text>
       </Section>
       <Section centered>
         <Input onChange={handleInputChange} />

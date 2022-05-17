@@ -16,6 +16,11 @@ export const Container = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
-  height: 50%;
+  height: 60%;
+`;
+
+export const CodeSection = styled.div`
+  background-color: ${({ theme }) => theme.backgroundDark};
+  margin: 0.5em 0;
+  padding: 0.5em;
 `;

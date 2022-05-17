@@ -7,9 +7,11 @@ type LayoutProps = {
 export type HeaderProps = LayoutProps;
 export type SectionProps = LayoutProps & { centered?: boolean };
 export type ContainerProps = LayoutProps;
+export type CodeSectionProps = LayoutProps;
 
 export type LayoutType = FC<LayoutProps> & {
   Header: FC<HeaderProps>;
   Section: FC<SectionProps>;
   Container: FC<ContainerProps>;
+  CodeSection: FC<CodeSectionProps>;
 };
