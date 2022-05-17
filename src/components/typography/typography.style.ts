@@ -24,10 +24,13 @@ export const Title3 = styled.h3`
 export const Text = styled.p`
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
+  white-space: pre;
 `;
 
 export const Code = styled.code`
   color: ${({ theme }) => theme.primary};
+  font-size: 16px;
+  white-space: pre;
   display: block;
   margin: 0.25em 0;
 `;
