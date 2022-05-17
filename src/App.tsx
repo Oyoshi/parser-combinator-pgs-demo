@@ -1,17 +1,19 @@
 import Layout from "components/layout";
+import Typography from "components/typography";
 import Input from "components/input";
 import Button from "components/button";
 import { log } from "utils/logger";
 
 const { Container, Header, Section } = Layout;
+const { Title, Text, Code } = Typography;
 
 const App = () => (
   <Container>
     <Header>
-      <h1>Parser Combinator in TypeScript</h1>
+      <Title level="1">Parser Combinator in TypeScript</Title>
     </Header>
     <Section>
-      <p>
+      <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -19,20 +21,20 @@ const App = () => (
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
-      </p>
-      <code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</code>
-      <code>{"<fullNumber> ::= <areaCode> <basicNumber>"}</code>
-      <code>
+      </Text>
+      <Code>{"<phoneNumber> ::= <fullNumber> | <basicNumber>"}</Code>
+      <Code>{"<fullNumber> ::= <areaCode> <basicNumber>"}</Code>
+      <Code>
         {"<basicNumber> ::= <spaces> <fourDigits> <spaces> <fourDigits>"}
-      </code>
-      <code>{"<fourDigits> ::= <digit> <digit> <digit> <digit>"}</code>
-      <code>{'<areaCode> ::= "(" <digit> <digit> ")"'}</code>
-      <code>
+      </Code>
+      <Code>{"<fourDigits> ::= <digit> <digit> <digit> <digit>"}</Code>
+      <Code>{'<areaCode> ::= "(" <digit> <digit> ")"'}</Code>
+      <Code>
         {
           '<digit> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"'
         }
-      </code>
-      <code>{'<spaces> ::= " " <spaces> | ""'}</code>
+      </Code>
+      <Code>{'<spaces> ::= " " <spaces> | ""'}</Code>
     </Section>
     <Section>
       <Input />

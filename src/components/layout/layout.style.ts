@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+  margin: 1em 0;
   text-align: center;
 `;
 
 export const Section = styled.section`
   text-align: left;
   margin: 2em 0;
-
-  > code {
-    display: block;
-    margin: 0.25em 0;
-  }
 `;
 
 export const Container = styled.div`
