@@ -3,7 +3,15 @@ import Layout from "components/layout";
 import Typography from "components/typography";
 import Input from "components/input";
 import Button from "components/button";
-import { phoneNumberParser, showParserResult, parse } from "parser";
+import {
+  phoneNumberParser,
+  showParserResult,
+  showParserRawResult,
+  parse,
+  fiveParser,
+  fiveOrSevenParser,
+  fiveAndSevenParser,
+} from "parser";
 
 const { Container, Header, Section, CodeSection } = Layout;
 const { Title, Text, Code } = Typography;
@@ -47,7 +55,7 @@ const App = () => {
           <Code>{'<countryCode> ::= "+" <twoDigits>'}</Code>
           <Code>
             {
-              "<basicNumber> ::= <areaCode> <spaces> <twoDigits> <spaces> <threeDigits> <spaces> <twoDigits> <spaces> <twoDigits>"
+              "<basicNumber> ::= <areaCode> <spaces> <threeDigits> <spaces> <twoDigits> <spaces> <twoDigits>"
             }
           </Code>
           <Code>{"<areaCode>    ::= <twoDigits>"}</Code>

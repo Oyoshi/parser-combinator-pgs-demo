@@ -1,6 +1,6 @@
 # Parser Combinator in TypeScript
 
-This is a simple implementation of parser combinator in TypeScript using `fp-ts` library.
+This is a simple implementation of parser combinator for Polish geographic phone number in TypeScript using `fp-ts` library.
 
 ## References
 

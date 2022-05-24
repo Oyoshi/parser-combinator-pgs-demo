@@ -34,7 +34,7 @@ export const showParserResult = E.fold(
       .reduce((acc, current) => acc + (current !== " " ? current : ""), "")}`
 );
 
-const charParser =
+export const charParser =
   (expectedChar: string): Parser<string> =>
   (input) =>
     pipe(
