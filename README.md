@@ -2,6 +2,10 @@
 
 This is a simple implementation of parser combinator for Polish geographic phone number in TypeScript using `fp-ts` library.
 
+## Build & Run :construction_worker:
+
+install yarn and type in your terminal: `yarn install && yarn start`
+
 ## References
 
 - https://tgdwyer.github.io/ - Blog posts on Parser Combinator in Haskell
