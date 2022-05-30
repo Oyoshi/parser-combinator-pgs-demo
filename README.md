@@ -4,7 +4,7 @@ This is a simple implementation of parser combinator for Polish geographic phone
 
 ## Build & Run :construction_worker:
 
-install yarn and type in your terminal: `yarn install && yarn start`
+Install `yarn` and type in your terminal: `yarn install && yarn start`.
 
 ## References
 
