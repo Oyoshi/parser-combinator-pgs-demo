@@ -52,7 +52,7 @@ const App = () => {
           <Code>
             {"<fullNumber>  ::= <countryCode> <spaces> <basicNumber>"}
           </Code>
-          <Code>{'<countryCode> ::= "+" <twoDigits>'}</Code>
+          <Code>{'<countryCode> ::= "+" "4" "8"'}</Code>
           <Code>
             {
               "<basicNumber> ::= <areaCode> <spaces> <threeDigits> <spaces> <twoDigits> <spaces> <twoDigits>"

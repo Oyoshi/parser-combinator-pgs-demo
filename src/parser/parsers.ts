@@ -94,7 +94,11 @@ export const basicNumberParser = pipe(
   map((arr: any): any => [].concat.apply([], arr))
 );
 
-export const countryCodeParser = seq(charParser("+"), ...twoDigitsCharParser);
+export const countryCodeParser = seq(
+  charParser("+"),
+  charParser("4"),
+  charParser("8")
+);
 
 export const fullNumberParser = seq(
   countryCodeParser,
